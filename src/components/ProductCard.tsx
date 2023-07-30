@@ -2,74 +2,17 @@ import React from "react";
 import { Card } from "antd";
 import Image from "next/image";
 
-const featuredProducts = [
-  {
-    id: 1,
-    name: "Product A",
-    category: "Category A",
-    price: "$19.99",
-    inStock: true,
-    rating: 4.5,
-    imageUrl: "https://placehold.co/600x400",
-  },
-  {
-    id: 2,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://placehold.co/600x400",
-  },
-  {
-    id: 3,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://placehold.co/600x400",
-  },
-  {
-    id: 4,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://placehold.co/600x400",
-  },
-  {
-    id: 5,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://placehold.co/600x400",
-  },
-  {
-    id: 6,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://placehold.co/600x400",
-  },
-  {
-    id: 7,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://placehold.co/600x400",
-  },
-  // Add more products here...
-];
+interface IProduct {
+  id: number;
+  name: string;
+  category: string;
+  price: number | string;
+  inStock: boolean;
+  rating: number;
+  imageUrl: string;
+}
 
-const ProductCard = () => {
+const ProductCard = ({ products }: { products: IProduct[] }) => {
   const handleProductClick = (productId: number) => {
     // Implement your logic to handle the click event and navigate to the product detail page.
     // For example, you can use React Router's 'Link' component or any other navigation method.
@@ -84,11 +27,11 @@ const ProductCard = () => {
         justifyContent: "space-around",
       }}
     >
-      {featuredProducts.map((product) => (
+      {products.map((product: IProduct) => (
         <Card
           key={product.id}
           hoverable
-          style={{ width: 300, margin: "16px" }}
+          style={{ width: 330, margin: "16px" }}
           cover={
             <Image
               layout="responsive"
@@ -111,7 +54,6 @@ const ProductCard = () => {
               </div>
             }
           />
-          
         </Card>
       ))}
     </div>

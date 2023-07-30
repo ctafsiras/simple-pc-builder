@@ -7,7 +7,7 @@ export default function Builder() {
         width={600}
         height={400}
         alt={"Alt"}
-        src={"https://placehold.co/600x400"}
+        src={"https://source.unsplash.com/random/600x400"}
       />
     </div>
   );
