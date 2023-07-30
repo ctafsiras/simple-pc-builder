@@ -1,70 +1,52 @@
 import React, { useState } from "react";
 import {
-  AppstoreOutlined,
-  MailOutlined,
+  CompassOutlined,
+  BuildOutlined,
   SettingOutlined,
+  HomeOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 
 const items: MenuProps["items"] = [
   {
-    label: "Navigation One",
-    key: "mail",
-    icon: <MailOutlined />,
+    label: "Homepage",
+    key: "home",
+    icon: <HomeOutlined />,
   },
+
   {
-    label: "Navigation Two",
-    key: "app",
-    icon: <AppstoreOutlined />,
-  },
-  {
-    label: "Navigation Three - Submenu",
-    key: "SubMenu",
-    icon: <SettingOutlined />,
+    label: "Categories",
+    key: "catergories",
+    icon: <CompassOutlined />,
     children: [
       {
-        type: "group",
-        label: "Item 1",
-        children: [
-          {
-            label: "Option 1",
-            key: "setting:1",
-          },
-          {
-            label: "Option 2",
-            key: "setting:2",
-          },
-        ],
+        label: "Option 1",
+        key: "setting:1",
       },
       {
-        type: "group",
-        label: "Item 2",
-        children: [
-          {
-            label: "Option 3",
-            key: "setting:3",
-          },
-          {
-            label: "Option 4",
-            key: "setting:4",
-          },
-        ],
+        label: "Option 2",
+        key: "setting:2",
       },
     ],
   },
   {
-    label: (
-      <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-        Navigation Four - Link
-      </a>
-    ),
-    key: "alipay",
+    label: "PC Builder",
+    key: "builder",
+    icon: <BuildOutlined />,
   },
+//   {
+//     label: (
+//       <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+//         Navigation Four - Link
+//       </a>
+//     ),
+//     key: "alipay",
+//   },
 ];
 
 const NavMenu: React.FC = () => {
-  const [current, setCurrent] = useState("mail");
+  const [current, setCurrent] = useState("home");
 
   const onClick: MenuProps["onClick"] = (e) => {
     console.log("click ", e);
