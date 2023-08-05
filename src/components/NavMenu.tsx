@@ -38,6 +38,10 @@ const items: MenuProps["items"] = [
         key: "category/power-supply-unit",
       },
       {
+        label: "Storage Device",
+        key: "category/storage-device",
+      },
+      {
         label: "Monitor",
         key: "category/monitor",
       },

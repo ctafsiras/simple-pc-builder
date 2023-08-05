@@ -3,8 +3,9 @@ import { Button, Radio, Space, Divider, Col, Card, Row } from "antd";
 import { Typography } from "antd";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Paragraph, Text } = Typography;
 
 const featuredProducts = [
   {
@@ -67,22 +68,35 @@ const featuredProducts = [
 const featuredCategories = [
   {
     title: "CPU / Processor",
+    key: "category/cpu-rocessor",
     imageUrl: "https://source.unsplash.com/random/150x150",
   },
   {
     title: "Motherboard",
+    key: "category/motherboard",
     imageUrl: "https://source.unsplash.com/random/150x150",
   },
-  { title: "RAM", imageUrl: "https://source.unsplash.com/random/150x150" },
+  {
+    title: "RAM",
+    key: "category/ram",
+    imageUrl: "https://source.unsplash.com/random/150x150",
+  },
+
   {
     title: "Power Supply Unit",
+    key: "category/power-supply-unit",
     imageUrl: "https://source.unsplash.com/random/150x150",
   },
   {
     title: "Storage Device",
+    key: "category/storage-device",
     imageUrl: "https://source.unsplash.com/random/150x150",
   },
-  { title: "Monitor", imageUrl: "https://source.unsplash.com/random/150x150" },
+  {
+    title: "Monitor",
+    key: "category/monitor",
+    imageUrl: "https://source.unsplash.com/random/150x150",
+  },
 ];
 export default function Home() {
   return (
@@ -101,23 +115,25 @@ export default function Home() {
         <Row gutter={[16, 16]}>
           {featuredCategories.map((category) => (
             <Col key={category.title} xs={24} sm={12} md={8}>
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <Card
-                  hoverable
-                  style={{ width: 240 }}
-                  cover={
-                    <Image
-                      layout="responsive"
-                      width={600}
-                      height={400}
-                      alt={category.title}
-                      src={category.imageUrl}
-                    />
-                  }
-                >
-                  <Card.Meta title={category.title} />
-                </Card>
-              </div>
+              <Link href={category.key}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Card
+                    hoverable
+                    style={{ width: 240 }}
+                    cover={
+                      <Image
+                        layout="responsive"
+                        width={600}
+                        height={400}
+                        alt={category.title}
+                        src={category.imageUrl}
+                      />
+                    }
+                  >
+                    <Card.Meta title={category.title} />
+                  </Card>
+                </div>
+              </Link>
             </Col>
           ))}
         </Row>
