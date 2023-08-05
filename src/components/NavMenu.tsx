@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import {
   CompassOutlined,
   BuildOutlined,
-  SettingOutlined,
   HomeOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import { useRouter } from "next/router";
+import AuthComponent from "./AuthComponent";
 
 const items: MenuProps["items"] = [
   {
@@ -56,14 +56,11 @@ const items: MenuProps["items"] = [
     key: "builder",
     icon: <BuildOutlined />,
   },
-  //   {
-  //     label: (
-  //       <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-  //         Navigation Four - Link
-  //       </a>
-  //     ),
-  //     key: "alipay",
-  //   },
+  {
+    label: <AuthComponent />,
+    key: "auth",
+    disabled: true,
+  },
 ];
 
 const NavMenu: React.FC = () => {
@@ -77,12 +74,14 @@ const NavMenu: React.FC = () => {
   };
 
   return (
-    <Menu
-      onClick={onClick}
-      selectedKeys={[current]}
-      mode="horizontal"
-      items={items}
-    />
+    <>
+      <Menu
+        onClick={onClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+        items={items}
+      />
+    </>
   );
 };
 

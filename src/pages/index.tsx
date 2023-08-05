@@ -4,6 +4,7 @@ import { Typography } from "antd";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import HeroSection from "@/components/HeroSection";
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -101,6 +102,7 @@ const featuredCategories = [
 export default function Home() {
   return (
     <>
+      <HeroSection />
       <div>
         <Title level={2} className="flex justify-center">
           Featured Products
