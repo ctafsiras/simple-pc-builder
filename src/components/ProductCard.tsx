@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "antd";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 interface IProduct {
   id: number;
@@ -13,9 +14,11 @@ interface IProduct {
 }
 
 const ProductCard = ({ products }: { products: IProduct[] }) => {
+  const router = useRouter();
   const handleProductClick = (productId: number) => {
     // Implement your logic to handle the click event and navigate to the product detail page.
     // For example, you can use React Router's 'Link' component or any other navigation method.
+    router.push(`/details/${productId}`);
     console.log(`Clicked product with ID: ${productId}`);
   };
 

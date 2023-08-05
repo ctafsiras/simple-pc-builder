@@ -22,12 +22,28 @@ const items: MenuProps["items"] = [
     icon: <CompassOutlined />,
     children: [
       {
-        label: "Option 1",
-        key: "setting:1",
+        label: "CPU / Processor",
+        key: "category/cpu-rocessor",
       },
       {
-        label: "Option 2",
-        key: "setting:2",
+        label: "Motherboard",
+        key: "category/motherboard",
+      },
+      {
+        label: "RAM",
+        key: "category/ram",
+      },
+      {
+        label: "Power Supply Unit",
+        key: "category/power-supply-unit",
+      },
+      {
+        label: "Monitor",
+        key: "category/monitor",
+      },
+      {
+        label: "Others",
+        key: "category/others",
       },
     ],
   },

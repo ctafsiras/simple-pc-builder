@@ -1,6 +1,7 @@
 import ProductCard from "@/components/ProductCard";
-import { Button, Radio, Space, Divider } from "antd";
+import { Button, Radio, Space, Divider, Col, Card, Row } from "antd";
 import { Typography } from "antd";
+import Image from "next/image";
 import React from "react";
 
 const { Title, Paragraph, Text, Link } = Typography;
@@ -62,14 +63,64 @@ const featuredProducts = [
   },
   // Add more products here...
 ];
+
+const featuredCategories = [
+  {
+    title: "CPU / Processor",
+    imageUrl: "https://source.unsplash.com/random/150x150",
+  },
+  {
+    title: "Motherboard",
+    imageUrl: "https://source.unsplash.com/random/150x150",
+  },
+  { title: "RAM", imageUrl: "https://source.unsplash.com/random/150x150" },
+  {
+    title: "Power Supply Unit",
+    imageUrl: "https://source.unsplash.com/random/150x150",
+  },
+  {
+    title: "Storage Device",
+    imageUrl: "https://source.unsplash.com/random/150x150",
+  },
+  { title: "Monitor", imageUrl: "https://source.unsplash.com/random/150x150" },
+];
 export default function Home() {
   return (
     <>
       <div>
         <Title level={2} className="flex justify-center">
-          Feature Images
+          Featured Products
         </Title>
         <ProductCard products={featuredProducts} />
+      </div>
+
+      <div>
+        <Title level={2} className="flex justify-center">
+          Featured Categories
+        </Title>
+        <Row gutter={[16, 16]}>
+          {featuredCategories.map((category) => (
+            <Col key={category.title} xs={24} sm={12} md={8}>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <Card
+                  hoverable
+                  style={{ width: 240 }}
+                  cover={
+                    <Image
+                      layout="responsive"
+                      width={600}
+                      height={400}
+                      alt={category.title}
+                      src={category.imageUrl}
+                    />
+                  }
+                >
+                  <Card.Meta title={category.title} />
+                </Card>
+              </div>
+            </Col>
+          ))}
+        </Row>
       </div>
     </>
   );
