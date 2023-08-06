@@ -1,0 +1,797 @@
+[
+  {
+    "id": 1,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "TechMaster X99 Pro",
+    "category": "Motherboard",
+    "category-slug": "motherboard",
+    "status": "In Stock",
+    "price": "$199.99",
+    "description": "The TechMaster X99 Pro motherboard is a high-performance option designed for gamers and content creators. It offers excellent overclocking capabilities and supports the latest Intel processors.",
+    "key_features": {
+      "brand": "TechMaster",
+      "model": "X99 Pro",
+      "socket": "LGA 1200",
+      "chipset": "Intel X99",
+      "ram_slots": "4 DDR4",
+      "ports": "USB 3.2, SATA 6Gb/s, M.2, HDMI",
+      "form_factor": "ATX",
+      "voltage": "12V"
+    },
+    "individual_rating": "4.8 Stars",
+    "average_rating": "4.7 Stars",
+    "reviews": [
+      "This motherboard is a beast! Highly recommended for gamers. - JohnDoe94",
+      "Easy to install and performs flawlessly. - TechGuru21"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Aorus B550 Elite",
+    "category": "Motherboard",
+    "category-slug": "motherboard",
+    "status": "In Stock",
+    "price": "$159.99",
+    "description": "The Aorus B550 Elite motherboard is designed for AMD Ryzen processors, providing a stable and reliable platform for gaming and productivity tasks.",
+    "key_features": {
+      "brand": "Aorus",
+      "model": "B550 Elite",
+      "socket": "AM4",
+      "chipset": "AMD B550",
+      "ram_slots": "4 DDR4",
+      "ports": "USB 3.2, SATA 6Gb/s, NVMe M.2, HDMI",
+      "form_factor": "ATX",
+      "voltage": "5V"
+    },
+    "individual_rating": "4.6 Stars",
+    "average_rating": "4.5 Stars",
+    "reviews": [
+      "Great value for money. Handles my Ryzen CPU with ease. - GamerGal92",
+      "Impressive build quality and performance. - PCMasterRace22"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "MSI MAG Z590 Tomahawk",
+    "category": "Motherboard",
+    "category-slug": "motherboard",
+    "status": "Out of Stock",
+    "price": "$249.99",
+    "description": "The MSI MAG Z590 Tomahawk is a top-tier motherboard with advanced features and extensive connectivity options. It supports Intel's 11th Gen processors and is an excellent choice for enthusiasts and overclockers.",
+    "key_features": {
+      "brand": "MSI",
+      "model": "MAG Z590 Tomahawk",
+      "socket": "LGA 1200",
+      "chipset": "Intel Z590",
+      "ram_slots": "4 DDR4",
+      "ports": "USB 3.2, SATA 6Gb/s, PCIe 4.0 M.2, DisplayPort",
+      "form_factor": "ATX",
+      "voltage": "12V"
+    },
+    "individual_rating": "4.9 Stars",
+    "average_rating": "4.8 Stars",
+    "reviews": [
+      "Absolutely fantastic motherboard! Flawless performance. - GamingPro123",
+      "Worth the price. MSI never disappoints. - TechEnthusiast89"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "ASUS ROG Strix X570-E",
+    "category": "Motherboard",
+    "category-slug": "motherboard",
+    "status": "In Stock",
+    "price": "$279.99",
+    "description": "The ASUS ROG Strix X570-E is a high-end gaming motherboard featuring robust power delivery, Wi-Fi 6 support, and impressive RGB lighting options for a personalized look.",
+    "key_features": {
+      "brand": "ASUS",
+      "model": "ROG Strix X570-E",
+      "socket": "AM4",
+      "chipset": "AMD X570",
+      "ram_slots": "4 DDR4",
+      "ports": "USB 3.2, SATA 6Gb/s, PCIe 4.0 M.2, Wi-Fi 6, HDMI",
+      "form_factor": "ATX",
+      "voltage": "5V"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "The best motherboard I've ever owned. Looks stunning in my build. - RGBMaster99",
+      "ASUS nailed it with this one. Outstanding performance. - GamerXtreme76"
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Gigabyte B450M DS3H",
+    "category": "Motherboard",
+    "category-slug": "motherboard",
+    "status": "In Stock",
+    "price": "$89.99",
+    "description": "The Gigabyte B450M DS3H is a budget-friendly option for AMD Ryzen processors, providing essential features for entry-level gaming and everyday tasks.",
+    "key_features": {
+      "brand": "Gigabyte",
+      "model": "B450M DS3H",
+      "socket": "AM4",
+      "chipset": "AMD B450",
+      "ram_slots": "4 DDR4",
+      "ports": "USB 3.1, SATA 6Gb/s, PCIe 3.0 M.2, DVI-D",
+      "form_factor": "Micro-ATX",
+      "voltage": "5V"
+    },
+    "individual_rating": "4.3 Stars",
+    "average_rating": "4.2 Stars",
+    "reviews": [
+      "Bang for the buck. Great for casual gamers. - BudgetBuilder55",
+      "Solid performance at an affordable price. - TechSavvyMom"
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Corsair Vengeance LPX 16GB",
+    "category": "RAM",
+    "category-slug": "ram",
+    "status": "In Stock",
+    "price": "$89.99",
+    "description": "The Corsair Vengeance LPX 16GB RAM kit is designed for high-performance gaming and multitasking. It offers fast speeds and reliable performance for your system.",
+    "key_features": {
+      "brand": "Corsair",
+      "model": "Vengeance LPX",
+      "capacity": "16GB (2 x 8GB)",
+      "speed": "DDR4 3200MHz",
+      "cas_latency": "16",
+      "type": "288-pin DIMM",
+      "voltage": "1.35V"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "Great RAM kit! Works flawlessly in my gaming rig. - GamerX",
+      "Corsair never disappoints. Excellent performance. - TechEnthusiast123"
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "G.Skill Ripjaws V 32GB",
+    "category": "RAM",
+    "category-slug": "ram",
+    "status": "In Stock",
+    "price": "$159.99",
+    "description": "The G.Skill Ripjaws V 32GB RAM kit is ideal for power users and content creators. It provides ample capacity and high speeds for smooth multitasking and rendering.",
+    "key_features": {
+      "brand": "G.Skill",
+      "model": "Ripjaws V",
+      "capacity": "32GB (2 x 16GB)",
+      "speed": "DDR4 3600MHz",
+      "cas_latency": "18",
+      "type": "288-pin DIMM",
+      "voltage": "1.35V"
+    },
+    "individual_rating": "4.8 Stars",
+    "average_rating": "4.7 Stars",
+    "reviews": [
+      "Impressive RAM performance. Perfect for video editing. - ContentCreatorX",
+      "Fast and reliable. G.Skill never disappoints. - TechGeek21"
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Kingston HyperX Fury 8GB",
+    "category": "RAM",
+    "category-slug": "ram",
+    "status": "Out of Stock",
+    "price": "$49.99",
+    "description": "The Kingston HyperX Fury 8GB RAM module is a cost-effective option for entry-level gaming and everyday computing needs.",
+    "key_features": {
+      "brand": "Kingston",
+      "model": "HyperX Fury",
+      "capacity": "8GB",
+      "speed": "DDR4 2666MHz",
+      "cas_latency": "16",
+      "type": "288-pin DIMM",
+      "voltage": "1.2V"
+    },
+    "individual_rating": "4.5 Stars",
+    "average_rating": "4.4 Stars",
+    "reviews": [
+      "Great budget RAM. Works well for my casual gaming needs. - BudgetGamer99",
+      "Reliable and affordable. Kingston never disappoints. - TechSavvyDad"
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Crucial Ballistix RGB 64GB",
+    "category": "RAM",
+    "category-slug": "ram",
+    "status": "In Stock",
+    "price": "$299.99",
+    "description": "The Crucial Ballistix RGB 64GB RAM kit offers high-capacity memory with stunning RGB lighting effects, perfect for gaming enthusiasts and content creators.",
+    "key_features": {
+      "brand": "Crucial",
+      "model": "Ballistix RGB",
+      "capacity": "64GB (4 x 16GB)",
+      "speed": "DDR4 3600MHz",
+      "cas_latency": "16",
+      "type": "288-pin DIMM",
+      "voltage": "1.35V"
+    },
+    "individual_rating": "4.9 Stars",
+    "average_rating": "4.8 Stars",
+    "reviews": [
+      "Top-notch RAM with mesmerizing RGB effects. Love it! - RGBMaster77",
+      "Massive capacity and blazing fast speeds. Crucial nailed it. - GamerProX"
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Team T-Force Vulcan Z 16GB",
+    "category": "RAM",
+    "category-slug": "ram",
+    "status": "In Stock",
+    "price": "$79.99",
+    "description": "The Team T-Force Vulcan Z 16GB RAM kit offers excellent performance and stability, making it an ideal choice for both gamers and professionals.",
+    "key_features": {
+      "brand": "Team",
+      "model": "T-Force Vulcan Z",
+      "capacity": "16GB (2 x 8GB)",
+      "speed": "DDR4 3000MHz",
+      "cas_latency": "16",
+      "type": "288-pin DIMM",
+      "voltage": "1.35V"
+    },
+    "individual_rating": "4.6 Stars",
+    "average_rating": "4.5 Stars",
+    "reviews": [
+      "Very reliable RAM for my gaming setup. - GamingNinjaX",
+      "Great performance at a reasonable price. - TechEnthusiastXYZ"
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "EVGA 650 BQ",
+    "category": "Power Supply Unit",
+    "category-slug": "power-supply-unit",
+    "status": "In Stock",
+    "price": "$79.99",
+    "description": "The EVGA 650 BQ is a reliable and efficient power supply unit suitable for mid-range gaming rigs and workstations.",
+    "key_features": {
+      "brand": "EVGA",
+      "model": "650 BQ",
+      "wattage": "650W",
+      "efficiency": "80 PLUS Bronze",
+      "modularity": "Semi-Modular",
+      "fan": "120mm",
+      "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current",
+      "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "Reliable PSU, powers my gaming setup flawlessly. - GamerX",
+      "EVGA never disappoints, excellent performance. - TechEnthusiast123"
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Corsair RM750x",
+    "category": "Power Supply Unit",
+    "category-slug": "power-supply-unit",
+    "status": "In Stock",
+    "price": "$129.99",
+    "description": "The Corsair RM750x is a high-quality power supply unit with full modularity and excellent efficiency, perfect for gaming enthusiasts and power users.",
+    "key_features": {
+      "brand": "Corsair",
+      "model": "RM750x",
+      "wattage": "750W",
+      "efficiency": "80 PLUS Gold",
+      "modularity": "Fully Modular",
+      "fan": "135mm",
+      "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Power, Over Temperature",
+      "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
+    },
+    "individual_rating": "4.8 Stars",
+    "average_rating": "4.7 Stars",
+    "reviews": [
+      "Outstanding PSU, runs quietly and efficiently. - SilentGamer99",
+      "Corsair RM series is top-notch. Highly recommended. - PCMasterRaceX"
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Seasonic Focus GX-850",
+    "category": "Power Supply Unit",
+    "category-slug": "power-supply-unit",
+    "status": "Out of Stock",
+    "price": "$159.99",
+    "description": "The Seasonic Focus GX-850 is a high-performance power supply unit with top-tier efficiency and stable power delivery, ideal for high-end gaming systems and workstations.",
+    "key_features": {
+      "brand": "Seasonic",
+      "model": "Focus GX-850",
+      "wattage": "850W",
+      "efficiency": "80 PLUS Gold",
+      "modularity": "Fully Modular",
+      "fan": "120mm",
+      "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Temperature",
+      "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
+    },
+    "individual_rating": "4.9 Stars",
+    "average_rating": "4.8 Stars",
+    "reviews": [
+      "Seasonic quality is unmatched, runs like a dream. - TechGeekX",
+      "Worth the investment for my high-end build. - GamerPro1234"
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Thermaltake Toughpower GF1 750W",
+    "category": "Power Supply Unit",
+    "category-slug": "power-supply-unit",
+    "status": "In Stock",
+    "price": "$109.99",
+    "description": "The Thermaltake Toughpower GF1 750W PSU offers stable performance with tight voltage regulation and low ripple, perfect for gaming and overclocking.",
+    "key_features": {
+      "brand": "Thermaltake",
+      "model": "Toughpower GF1 750W",
+      "wattage": "750W",
+      "efficiency": "80 PLUS Gold",
+      "modularity": "Semi-Modular",
+      "fan": "140mm",
+      "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Temperature",
+      "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "Thermaltake PSU is solid, no issues whatsoever. - GamingNinjaX",
+      "Affordable and reliable choice for my gaming setup. - BudgetGamer77"
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "NZXT C850",
+    "category": "Power Supply Unit",
+    "category-slug": "power-supply-unit",
+    "status": "In Stock",
+    "price": "$139.99",
+    "description": "The NZXT C850 power supply features a compact design with fully modular cables, making cable management a breeze for clean-looking builds.",
+    "key_features": {
+      "brand": "NZXT",
+      "model": "C850",
+      "wattage": "850W",
+      "efficiency": "80 PLUS Gold",
+      "modularity": "Fully Modular",
+      "fan": "135mm",
+      "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Power, Over Temperature",
+      "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
+    },
+    "individual_rating": "4.6 Stars",
+    "average_rating": "4.5 Stars",
+    "reviews": [
+      "NZXT delivers again, PSU works great in my compact build. - MiniMasterRace",
+      "Highly recommend the C series, excellent performance. - TechEnthusiastXYZ"
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Samsung 970 EVO Plus 500GB",
+    "category": "Storage Device",
+    "category-slug": "storage-device",
+    "status": "In Stock",
+    "price": "$99.99",
+    "description": "The Samsung 970 EVO Plus 500GB is a high-performance NVMe SSD that offers blazing-fast read and write speeds, perfect for gaming and content creation.",
+    "key_features": {
+      "brand": "Samsung",
+      "model": "970 EVO Plus",
+      "capacity": "500GB",
+      "interface": "NVMe PCIe M.2",
+      "read_speed": "3500 MB/s",
+      "write_speed": "3300 MB/s",
+      "form_factor": "M.2 2280",
+      "nand_type": "V-NAND 3-bit MLC",
+      "encryption": "AES 256-bit"
+    },
+    "individual_rating": "4.8 Stars",
+    "average_rating": "4.7 Stars",
+    "reviews": [
+      "Samsung EVO series never disappoints, super fast SSD. - SpeedDemon123",
+      "A great upgrade for my system, games load instantly. - GamerXtreme55"
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Crucial MX500 1TB",
+    "category": "Storage Device",
+    "category-slug": "storage-device",
+    "status": "In Stock",
+    "price": "$119.99",
+    "description": "The Crucial MX500 1TB SATA SSD offers high-capacity storage with reliable performance, ideal for everyday computing tasks and multimedia storage.",
+    "key_features": {
+      "brand": "Crucial",
+      "model": "MX500",
+      "capacity": "1TB",
+      "interface": "SATA III 6Gb/s",
+      "read_speed": "560 MB/s",
+      "write_speed": "510 MB/s",
+      "form_factor": "2.5-inch",
+      "nand_type": "3D NAND TLC",
+      "encryption": "AES 256-bit"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "Crucial MX500 is a reliable SSD with excellent performance. - TechGeekX",
+      "Great value for a 1TB SSD. Works like a charm. - BudgetTechie99"
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Western Digital Blue 2TB",
+    "category": "Storage Device",
+    "category-slug": "storage-device",
+    "status": "Out of Stock",
+    "price": "$199.99",
+    "description": "The Western Digital Blue 2TB HDD offers massive storage capacity for large media libraries and backups, suitable for bulk data storage.",
+    "key_features": {
+      "brand": "Western Digital",
+      "model": "Blue",
+      "capacity": "2TB",
+      "interface": "SATA III 6Gb/s",
+      "read_speed": "150 MB/s",
+      "write_speed": "150 MB/s",
+      "form_factor": "3.5-inch",
+      "nand_type": "N/A",
+      "encryption": "N/A"
+    },
+    "individual_rating": "4.6 Stars",
+    "average_rating": "4.5 Stars",
+    "reviews": [
+      "WD Blue drives are always reliable, plenty of space for my files. - DataHoarderX",
+      "Great HDD for backups and file storage. - DigitalArchivist"
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Seagate FireCuda 2TB SSHD",
+    "category": "Storage Device",
+    "category-slug": "storage-device",
+    "status": "In Stock",
+    "price": "$129.99",
+    "description": "The Seagate FireCuda 2TB SSHD combines HDD capacity with SSD-like performance, providing faster loading times for games and frequently used applications.",
+    "key_features": {
+      "brand": "Seagate",
+      "model": "FireCuda",
+      "capacity": "2TB",
+      "interface": "SATA III 6Gb/s",
+      "read_speed": "210 MB/s",
+      "write_speed": "210 MB/s",
+      "form_factor": "2.5-inch",
+      "nand_type": "NAND Flash",
+      "encryption": "N/A"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "FireCuda SSHD offers good performance and plenty of storage. - GamerPro123",
+      "Fast loading times in games, great hybrid drive. - HybridGamerX"
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "ADATA SU800 256GB",
+    "category": "Storage Device",
+    "category-slug": "storage-device",
+    "status": "In Stock",
+    "price": "$49.99",
+    "description": "The ADATA SU800 256GB SATA SSD provides reliable and affordable storage, suitable for boot drives and basic computing needs.",
+    "key_features": {
+      "brand": "ADATA",
+      "model": "SU800",
+      "capacity": "256GB",
+      "interface": "SATA III 6Gb/s",
+      "read_speed": "560 MB/s",
+      "write_speed": "520 MB/s",
+      "form_factor": "2.5-inch",
+      "nand_type": "3D NAND TLC",
+      "encryption": "AES 256-bit"
+    },
+    "individual_rating": "4.5 Stars",
+    "average_rating": "4.4 Stars",
+    "reviews": [
+      "Great budget SSD for my operating system. - BudgetBuilder55",
+      "ADATA SU800 performs well, good value for the price. - TechSavvyMom"
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "ASUS ROG Swift PG279Q",
+    "category": "Monitor",
+    "category-slug": "monitor",
+    "status": "In Stock",
+    "price": "$599.99",
+    "description": "The ASUS ROG Swift PG279Q is a high-performance gaming monitor with a fast refresh rate and IPS panel for stunning visuals and smooth gameplay.",
+    "key_features": {
+      "brand": "ASUS",
+      "model": "ROG Swift PG279Q",
+      "display_size": "27 inches",
+      "resolution": "2560 x 1440 (WQHD)",
+      "panel_type": "IPS",
+      "refresh_rate": "165Hz",
+      "response_time": "1ms (GTG)",
+      "aspect_ratio": "16:9",
+      "connectors": "HDMI, DisplayPort, USB 3.0"
+    },
+    "individual_rating": "4.8 Stars",
+    "average_rating": "4.7 Stars",
+    "reviews": [
+      "ASUS ROG monitors are top-notch. Excellent gaming experience. - GamerXtreme99",
+      "Vibrant colors and smooth motion. Highly recommended. - TechEnthusiast123"
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Dell Ultrasharp U2419H",
+    "category": "Monitor",
+    "category-slug": "monitor",
+    "status": "In Stock",
+    "price": "$249.99",
+    "description": "The Dell Ultrasharp U2419H is a professional-grade monitor with accurate color reproduction and ergonomic design for productivity tasks.",
+    "key_features": {
+      "brand": "Dell",
+      "model": "Ultrasharp U2419H",
+      "display_size": "24 inches",
+      "resolution": "1920 x 1080 (Full HD)",
+      "panel_type": "IPS",
+      "refresh_rate": "60Hz",
+      "response_time": "5ms (GTG)",
+      "aspect_ratio": "16:9",
+      "connectors": "HDMI, DisplayPort, USB 3.0"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "Great monitor for photo editing. Accurate colors and sharp images. - PhotoPro123",
+      "Dell Ultrasharp series is reliable and provides a comfortable workspace. - OfficeWorker99"
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "LG 34GN850-B",
+    "category": "Monitor",
+    "category-slug": "monitor",
+    "status": "Out of Stock",
+    "price": "$799.99",
+    "description": "The LG 34GN850-B is an ultra-wide gaming monitor with a high refresh rate and Nano IPS technology for immersive gaming and multitasking.",
+    "key_features": {
+      "brand": "LG",
+      "model": "34GN850-B",
+      "display_size": "34 inches",
+      "resolution": "3440 x 1440 (UWQHD)",
+      "panel_type": "Nano IPS",
+      "refresh_rate": "160Hz",
+      "response_time": "1ms (GTG)",
+      "aspect_ratio": "21:9",
+      "connectors": "HDMI, DisplayPort, USB 3.0"
+    },
+    "individual_rating": "4.9 Stars",
+    "average_rating": "4.8 Stars",
+    "reviews": [
+      "LG did an amazing job with this monitor. Gaming and productivity heaven. - GamerProX",
+      "Ultra-wide is a game-changer. LG 34GN850-B is worth every penny. - TechGeekX"
+    ]
+  },
+  {
+    "id": 24,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Acer R240HY",
+    "category": "Monitor",
+    "category-slug": "monitor",
+    "status": "In Stock",
+    "price": "$139.99",
+    "description": "The Acer R240HY is an affordable IPS monitor with a sleek design, ideal for everyday use and multimedia consumption.",
+    "key_features": {
+      "brand": "Acer",
+      "model": "R240HY",
+      "display_size": "23.8 inches",
+      "resolution": "1920 x 1080 (Full HD)",
+      "panel_type": "IPS",
+      "refresh_rate": "60Hz",
+      "response_time": "4ms (GTG)",
+      "aspect_ratio": "16:9",
+      "connectors": "HDMI, DVI, VGA"
+    },
+    "individual_rating": "4.6 Stars",
+    "average_rating": "4.5 Stars",
+    "reviews": [
+      "Acer R240HY is a budget-friendly monitor with decent image quality. - BudgetTechie99",
+      "Perfect for my home office setup. Simple and reliable. - HomeWorker123"
+    ]
+  },
+  {
+    "id": 25,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "BenQ EX2780Q",
+    "category": "Monitor",
+    "category-slug": "monitor",
+    "status": "In Stock",
+    "price": "$349.99",
+    "description": "The BenQ EX2780Q is a 27-inch gaming monitor with a high refresh rate and HDR support, delivering stunning visuals and smooth gaming experience.",
+    "key_features": {
+      "brand": "BenQ",
+      "model": "EX2780Q",
+      "display_size": "27 inches",
+      "resolution": "2560 x 1440 (WQHD)",
+      "panel_type": "IPS",
+      "refresh_rate": "144Hz",
+      "response_time": "5ms (GTG)",
+      "aspect_ratio": "16:9",
+      "connectors": "HDMI, DisplayPort, USB-C"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "BenQ EX2780Q has great colors and smooth gameplay. - GamerXtreme55",
+      "HDR adds a new level of immersion. Very satisfied with this monitor. - TechEnthusiastXYZ"
+    ]
+  },
+  {
+    "id": 26,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Intel Core i9-11900K",
+    "category": "CPU / Processor",
+    "category-slug": "cpu-processor",
+    "status": "In Stock",
+    "price": "$499.99",
+    "description": "The Intel Core i9-11900K is a high-performance processor from Intel's 11th Gen Core series, featuring high clock speeds and multi-core performance for gaming and content creation.",
+    "key_features": {
+      "brand": "Intel",
+      "model": "Core i9-11900K",
+      "socket": "LGA 1200",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "3.5 GHz",
+      "max_clock": "5.3 GHz",
+      "cache": "16MB SmartCache",
+      "architecture": "Cypress Cove",
+      "power_draw": "125W"
+    },
+    "individual_rating": "4.8 Stars",
+    "average_rating": "4.7 Stars",
+    "reviews": [
+      "i9-11900K is a beast, handles everything I throw at it. - GamerXtreme99",
+      "In-tel CPUs always deliver, excellent performance for my workloads. - TechEnthusiast123"
+    ]
+  },
+  {
+    "id": 27,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "AMD Ryzen 9 5900X",
+    "category": "CPU / Processor",
+    "category-slug": "cpu-processor",
+    "status": "In Stock",
+    "price": "$549.99",
+    "description": "The AMD Ryzen 9 5900X is a high-end processor from AMD's Ryzen 5000 series, offering exceptional multi-core performance and efficiency for enthusiasts and content creators.",
+    "key_features": {
+      "brand": "AMD",
+      "model": "Ryzen 9 5900X",
+      "socket": "AM4",
+      "cores": "12",
+      "threads": "24",
+      "base_clock": "3.7 GHz",
+      "max_clock": "4.8 GHz",
+      "cache": "70MB",
+      "architecture": "Zen 3",
+      "power_draw": "105W"
+    },
+    "individual_rating": "4.9 Stars",
+    "average_rating": "4.8 Stars",
+    "reviews": [
+      "Ryzen 9 5900X is a monster, amazing performance in both gaming and rendering. - GamerProX",
+      "AM-D is killing it with Zen 3 CPUs, this one is no exception. - TechGeekX"
+    ]
+  },
+  {
+    "id": 28,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Intel Core i7-11700K",
+    "category": "CPU / Processor",
+    "category-slug": "cpu-processor",
+    "status": "Out of Stock",
+    "price": "$399.99",
+    "description": "The Intel Core i7-11700K is a powerful processor from Intel's 11th Gen Core series, offering excellent gaming performance and multi-core capabilities.",
+    "key_features": {
+      "brand": "Intel",
+      "model": "Core i7-11700K",
+      "socket": "LGA 1200",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "3.6 GHz",
+      "max_clock": "5.0 GHz",
+      "cache": "16MB SmartCache",
+      "architecture": "Cypress Cove",
+      "power_draw": "125W"
+    },
+    "individual_rating": "4.7 Stars",
+    "average_rating": "4.6 Stars",
+    "reviews": [
+      "i7-11700K is a great CPU, runs my games flawlessly. - GamingNinjaX",
+      "Go-od balance between price and performance. Happy with my purchase. - BudgetGamer77"
+    ]
+  },
+  {
+    "id": 29,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "AMD Ryzen 7 5800X",
+    "category": "CPU / Processor",
+    "category-slug": "cpu-processor",
+    "status": "In Stock",
+    "price": "$399.99",
+    "description": "The AMD Ryzen 7 5800X is a high-performance processor from AMD's Ryzen 5000 series, offering impressive multi-core performance and gaming capabilities.",
+    "key_features": {
+      "brand": "AMD",
+      "model": "Ryzen 7 5800X",
+      "socket": "AM4",
+      "cores": "8",
+      "threads": "16",
+      "base_clock": "3.8 GHz",
+      "max_clock": "4.7 GHz",
+      "cache": "36MB",
+      "architecture": "Zen 3",
+      "power_draw": "105W"
+    },
+    "individual_rating": "4.8 Stars",
+    "average_rating": "4.7 Stars",
+    "reviews": [
+      "Ryzen 7 5800X is a powerhouse, handles everything with ease. - TechGuru21",
+      "Fa-st and efficient CPU, excellent upgrade for my system. - PCMasterRaceX"
+    ]
+  },
+  {
+    "id": 30,
+    "image": "https://source.unsplash.com/random/600x400",
+    "name": "Intel Core i5-11600K",
+    "category": "CPU / Processor",
+    "category-slug": "cpu-processor",
+    "status": "In Stock",
+    "price": "$269.99",
+    "description": "The Intel Core i5-11600K is a capable processor from Intel's 11th Gen Core series, providing a balance of gaming performance and multi-core capabilities.",
+    "key_features": {
+      "brand": "Intel",
+      "model": "Core i5-11600K",
+      "socket": "LGA 1200",
+      "cores": "6",
+      "threads": "12",
+      "base_clock": "3.9 GHz",
+      "max_clock": "4.9 GHz",
+      "cache": "12MB SmartCache",
+      "architecture": "Cypress Cove",
+      "power_draw": "125W"
+    },
+    "individual_rating": "4.6 Stars",
+    "average_rating": "4.5 Stars",
+    "reviews": [
+      "Core i5-11600K is a solid performer for gaming. - BudgetBuilder55",
+      "Gr-eat value CPU, delivers smooth gaming experience. - TechSavvyMom"
+    ]
+  }
+]

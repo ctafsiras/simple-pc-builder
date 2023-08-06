@@ -23,7 +23,7 @@ const items: MenuProps["items"] = [
     children: [
       {
         label: "CPU / Processor",
-        key: "category/cpu-rocessor",
+        key: "category/cpu-processor",
       },
       {
         label: "Motherboard",

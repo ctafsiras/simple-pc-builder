@@ -69,7 +69,7 @@ const featuredProducts = [
 export const featuredCategories = [
   {
     title: "CPU / Processor",
-    key: "category/cpu-rocessor",
+    key: "category/cpu-processor",
     imageUrl: "https://source.unsplash.com/random/150x150",
   },
   {
