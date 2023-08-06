@@ -1,7 +1,8 @@
-import React from "react";
-import { Card } from "antd";
+import React, { useContext } from "react";
+import { Button, Card } from "antd";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { BuilderContext } from "@/context/builderContext";
 
 interface IProduct {
   id: number;
@@ -14,12 +15,21 @@ interface IProduct {
 }
 
 const ProductCard = ({ products }: { products: IProduct[] }) => {
+  const { selectedComponents, addComponentToBuilder } =
+    useContext(BuilderContext);
   const router = useRouter();
-  const handleProductClick = (productId: number) => {
+  // console.log(selectedComponents);
+  const handleProductClick = (product) => {
     // Implement your logic to handle the click event and navigate to the product detail page.
     // For example, you can use React Router's 'Link' component or any other navigation method.
-    router.push(`/details/${productId}`);
-    console.log(`Clicked product with ID: ${productId}`);
+    if (router.query.for === "builder") {
+      addComponentToBuilder('Monitor', product.name);
+      router.push(`/builder`);
+    } else {
+      router.push(`/details/${product.id}`);
+    }
+
+    // console.log(`Clicked product with ID: ${product.id}`);
   };
 
   return (
@@ -44,7 +54,7 @@ const ProductCard = ({ products }: { products: IProduct[] }) => {
               src={product.imageUrl}
             />
           }
-          onClick={() => handleProductClick(product.id)}
+          onClick={() => handleProductClick(product)}
         >
           <Card.Meta
             title={product.name}
@@ -57,6 +67,15 @@ const ProductCard = ({ products }: { products: IProduct[] }) => {
               </div>
             }
           />
+          {/* {router.query.for === "builder" && (
+            <Button
+              onClick={() => handleProductSelect(product.id)}
+              type="primary"
+              block
+            >
+              Select
+            </Button>
+          )} */}
         </Card>
       ))}
     </div>

@@ -66,7 +66,7 @@ const featuredProducts = [
   // Add more products here...
 ];
 
-const featuredCategories = [
+export const featuredCategories = [
   {
     title: "CPU / Processor",
     key: "category/cpu-rocessor",
