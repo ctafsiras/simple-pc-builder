@@ -14,7 +14,7 @@ const ProductDetailPage = ({ product }: { product: IProduct }) => {
         <title>{product.name} | Simple PC Builder</title>
       </Head>
       <Row gutter={[16, 16]}>
-        <Col span={12}>
+        <Col span={12} xs={24} lg={12}>
           <Card
             cover={
               <Image
@@ -32,7 +32,7 @@ const ProductDetailPage = ({ product }: { product: IProduct }) => {
             <Meta title={product.name} description={product.price} />
           </Card>
         </Col>
-        <Col span={12}>
+        <Col span={12} xs={24} lg={12}>
           <h1>{product.name}</h1>
           <p>{product.category}</p>
           <p>{product.description}</p>
