@@ -97,7 +97,8 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/recent-products");
-  const recentProducts = await res.json();
+  // const res = await fetch("http://localhost:3000/api/recent-products");
+  // const recentProducts = await res.json();
+  const recentProducts:[] = [];
   return { props: { recentProducts } };
 };

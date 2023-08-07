@@ -8,7 +8,6 @@ import Head from "next/head";
 const { Meta } = Card;
 
 const ProductDetailPage = ({ product }: { product: IProduct }) => {
-
   return (
     <div style={{ padding: "20px" }}>
       <Head>
@@ -70,21 +69,24 @@ const ProductDetailPage = ({ product }: { product: IProduct }) => {
 
 export default ProductDetailPage;
 
-export async function getStaticPaths() {
-  const res = await fetch(`http://localhost:3000/api/products`);
-  const products = await res.json();
-  const paths = products.map((product: IProduct) => ({
-    params: { productId: String(product.id) },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-}
+// export async function getStaticPaths() {
+//   const res = await fetch(`http://localhost:3000/api/products`);
+//   const products = await res.json();
+//   const paths = products.map((product: IProduct) => ({
+//     params: { productId: String(product.id) },
+//   }));
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { productId } = context.params!;
-  const res = await fetch(`http://localhost:3000/api/details/${productId}`);
-  const product = await res.json();
+  // const { productId } = context.params!;
+  // const res = await fetch(
+  //   `http://localhost:3000/api/details/${productId}`
+  // );
+  // const product = await res.json();
+  const product = null;
   return { props: { product } };
 };

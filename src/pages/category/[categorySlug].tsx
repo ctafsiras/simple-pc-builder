@@ -23,21 +23,22 @@ export default function CategoryPage({ products }: { products: IProduct[] }) {
   );
 }
 
-export async function getStaticPaths() {
-  const res = await fetch(`http://localhost:3000/api/products`);
-  const products = await res.json();
-  const paths = products.map((product: IProduct) => ({
-    params: { categorySlug: product['category-slug'] },
-  }));
-  return {
-    paths,
-    fallback: true,
-  }
-}
+// export async function getStaticPaths() {
+//   const res = await fetch(`http://localhost:3000/api/products`);
+//   const products = await res.json();
+//   const paths = products.map((product: IProduct) => ({
+//     params: { categorySlug: product['category-slug'] },
+//   }));
+//   return {
+//     paths,
+//     fallback: true,
+//   }
+// }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { categorySlug } = context.params!;
-  const res = await fetch(`http://localhost:3000/api/category/${categorySlug}`);
-  const products = await res.json();
+  // const { categorySlug } = context.params!;
+  // const res = await fetch(`http://localhost:3000/api/category/${categorySlug}`);
+  // const products = await res.json();
+  const products: [] = [];
   return { props: { products } };
 };
