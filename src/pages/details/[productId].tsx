@@ -10,7 +10,8 @@ const { Meta } = Card;
 const ProductDetailPage = ({ product }: { product: IProduct }) => {
   return (
     <div style={{ padding: "20px" }}>
-      <Head>
+      <h1>Hello</h1>
+      {/* <Head>
         <title>{product.name} | Simple PC Builder</title>
       </Head>
       <Row gutter={[16, 16]}>
@@ -62,7 +63,7 @@ const ProductDetailPage = ({ product }: { product: IProduct }) => {
             </div>
           ))}
         </Col>
-      </Row>
+      </Row> */}
     </div>
   );
 };
@@ -81,12 +82,11 @@ export default ProductDetailPage;
 //   };
 // }
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  // const { productId } = context.params!;
-  // const res = await fetch(
-  //   `http://localhost:3000/api/details/${productId}`
-  // );
-  // const product = await res.json();
-  const product = null;
-  return { props: { product } };
-};
+// export const getStaticProps: GetStaticProps = async (context) => {
+//   const { productId } = context.params!;
+//   const res = await fetch(
+//     `http://localhost:3000/api/details/${productId}`
+//   );
+//   const product = await res.json();
+//   return { props: { product } };
+// };

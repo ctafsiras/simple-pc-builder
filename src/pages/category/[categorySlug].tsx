@@ -10,7 +10,8 @@ export default function CategoryPage({ products }: { products: IProduct[] }) {
   const router = useRouter();
   return (
     <div>
-      <Head>
+      <h1>hello</h1>
+      {/* <Head>
         <title>{products[0].category} Category | Simple PC Builder</title>
       </Head>
       <div>
@@ -18,7 +19,7 @@ export default function CategoryPage({ products }: { products: IProduct[] }) {
           {products[0].category} Category Products
         </Title>
         <ProductCard products={products} />
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -35,10 +36,9 @@ export default function CategoryPage({ products }: { products: IProduct[] }) {
 //   }
 // }
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  // const { categorySlug } = context.params!;
-  // const res = await fetch(`http://localhost:3000/api/category/${categorySlug}`);
-  // const products = await res.json();
-  const products: [] = [];
-  return { props: { products } };
-};
+// export const getStaticProps: GetStaticProps = async (context) => {
+//   const { categorySlug } = context.params!;
+//   const res = await fetch(`http://localhost:3000/api/category/${categorySlug}`);
+//   const products = await res.json();
+//   return { props: { products } };
+// };
