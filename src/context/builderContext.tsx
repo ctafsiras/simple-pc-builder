@@ -5,7 +5,7 @@ import {
 } from "@/interface/product";
 import { ReactNode, createContext, useState } from "react";
 
-const defaultSelectedComponents: IDefaultSelectedComponents|null = {
+const defaultSelectedComponents: IDefaultSelectedComponents | null = {
   "CPU / Processor": null,
   Motherboard: null,
   RAM: null,

@@ -28,7 +28,7 @@ const ProductCard = ({ products }: { products: IProduct[] }) => {
       {products.map((product: IProduct) => (
         <Card
           key={product.id}
-          hoverable
+          hoverable={router.query.for !== "builder"}
           style={{ width: 330, margin: "16px" }}
           cover={
             <Image
@@ -52,15 +52,15 @@ const ProductCard = ({ products }: { products: IProduct[] }) => {
               </div>
             }
           />
-          {/* {router.query.for === "builder" && (
+          {router.query.for === "builder" && (
             <Button
-              onClick={() => handleProductSelect(product.id)}
+              onClick={() => handleProductClick(product)}
               type="primary"
               block
             >
-              Select
+              Add To Builder
             </Button>
-          )} */}
+          )}
         </Card>
       ))}
     </div>
