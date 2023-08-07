@@ -1,6 +1,11 @@
+import {
+  BuilderContextType,
+  IDefaultSelectedComponents,
+  IProduct,
+} from "@/interface/product";
 import { ReactNode, createContext, useState } from "react";
 
-const defaultSelectedComponents = {
+const defaultSelectedComponents: IDefaultSelectedComponents|null = {
   "CPU / Processor": null,
   Motherboard: null,
   RAM: null,
@@ -9,14 +14,17 @@ const defaultSelectedComponents = {
   Monitor: null,
 };
 
-const BuilderContext = createContext();
+const BuilderContext = createContext<BuilderContextType>(undefined!);
 
 const BuilderContextProvider = ({ children }: { children: ReactNode }) => {
   const [selectedComponents, setSelectedComponents] = useState(
     defaultSelectedComponents
   );
 
-  const addComponentToBuilder = (category: string, component: string) => {
+  const addComponentToBuilder = (
+    category: string,
+    component: IProduct | null
+  ) => {
     setSelectedComponents({
       ...selectedComponents,
       [category]: component,

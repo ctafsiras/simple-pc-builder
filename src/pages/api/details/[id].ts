@@ -7,7 +7,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   // Validate if category is provided
   if (!id) {
-    return res.status(400).json({ error: "Category Slug parameter is required" });
+    return res.status(400).json({ error: "ID parameter is required" });
   }
   try {
     const product = data.find((item) => item.id === Number(id));

@@ -4,13 +4,16 @@ import { UserOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import { IProduct } from "@/interface/product";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 const { Meta } = Card;
 
 const ProductDetailPage = ({ product }: { product: IProduct }) => {
-  // Placeholder data for the PC component
 
   return (
     <div style={{ padding: "20px" }}>
+      <Head>
+        <title>{product.name} | Simple PC Builder</title>
+      </Head>
       <Row gutter={[16, 16]}>
         <Col span={12}>
           <Card
@@ -75,13 +78,12 @@ export async function getStaticPaths() {
   }));
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  console.log(context);
-  const { productId } = context.params;
+  const { productId } = context.params!;
   const res = await fetch(`http://localhost:3000/api/details/${productId}`);
   const product = await res.json();
   return { props: { product } };

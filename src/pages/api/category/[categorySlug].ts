@@ -1,17 +1,13 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import data from "@/data.json";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const { categorySlug } = req.query;
-
-  // Validate if category is provided
   if (!categorySlug) {
     return res.status(400).json({ error: "Category Slug parameter is required" });
   }
   try {
     const filteredData = data.filter((item) => item['category-slug'] === categorySlug);
-
     res.status(200).json(filteredData);
   } catch (error) {
     console.error("Error reading data file:", error);

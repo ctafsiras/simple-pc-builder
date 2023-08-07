@@ -68,7 +68,6 @@ const NavMenu: React.FC = () => {
   const router = useRouter();
 
   const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
     router.push(`/${e.key}`);
     setCurrent(e.key);
   };

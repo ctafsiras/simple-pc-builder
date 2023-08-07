@@ -7,6 +7,7 @@ import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 import { GetStaticProps } from "next";
 import { IProduct } from "@/interface/product";
+import Head from "next/head";
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -50,6 +51,9 @@ export default function Home({
 }) {
   return (
     <>
+      <Head>
+        <title>Simple PC Builder</title>
+      </Head>
       <HeroSection />
       <div>
         <Title level={2} className="flex justify-center">

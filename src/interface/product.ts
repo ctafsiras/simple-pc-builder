@@ -21,3 +21,17 @@ export interface IProduct {
   average_rating: string;
   reviews: string[];
 }
+
+export interface IDefaultSelectedComponents {
+  "CPU / Processor": IProduct | null;
+  Motherboard: IProduct | null;
+  RAM: IProduct | null;
+  "Power Supply Unit": IProduct | null;
+  "Storage Device": IProduct | null;
+  [Monitor: string]: IProduct | null;
+}
+
+export interface BuilderContextType {
+  selectedComponents: IDefaultSelectedComponents;
+  addComponentToBuilder: (category: string, component: IProduct | null) => void;
+}

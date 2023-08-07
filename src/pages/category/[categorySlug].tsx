@@ -3,13 +3,16 @@ import { useRouter } from "next/router";
 import { Typography } from "antd";
 import { GetStaticProps } from "next";
 import { IProduct } from "@/interface/product";
+import Head from "next/head";
 const { Title } = Typography;
 
 export default function CategoryPage({ products }: { products: IProduct[] }) {
   const router = useRouter();
-  console.log(router);
   return (
     <div>
+      <Head>
+        <title>{products[0].category} Category | Simple PC Builder</title>
+      </Head>
       <div>
         <Title level={2} className="flex justify-center">
           {products[0].category} Category Products
@@ -33,8 +36,7 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  console.log(context)
-  const { categorySlug } = context.params;
+  const { categorySlug } = context.params!;
   const res = await fetch(`http://localhost:3000/api/category/${categorySlug}`);
   const products = await res.json();
   return { props: { products } };

@@ -1,19 +1,22 @@
-import React, { useContext } from "react";
-// or useContext for Context API implementation
-import { Button, Card, Col } from "antd";
+import React, { useContext, useState } from "react";
+import { Button, Card, Modal } from "antd";
 import Link from "next/link";
-import Image from "next/image";
 import { BuilderContext } from "@/context/builderContext";
 import { featuredCategories } from ".";
 import ProductCard from "@/components/ProductCard";
+import { IDefaultSelectedComponents } from "@/interface/product";
+import Head from "next/head";
 
 const PCBuilderPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { selectedComponents } = useContext(BuilderContext);
-  console.log(selectedComponents);
   const isBuildComplete =
     Object.values(selectedComponents).filter(Boolean).length >= 6;
   return (
     <div>
+      <Head>
+        <title>PC Builder | Simple PC Builder</title>
+      </Head>
       <Card title="PC Builder Page">
         {featuredCategories.map((category, i) => (
           <Card
@@ -29,17 +32,22 @@ const PCBuilderPage = () => {
               </Link>
             }
           >
-            {selectedComponents[category.title] ? (
-              <ProductCard products={[selectedComponents[category.title]]} />
+            {selectedComponents![category.title] ? (
+              <ProductCard products={[selectedComponents[category.title]!]} />
             ) : (
               "No component selected"
             )}
           </Card>
         ))}
-        <Button className="mt-6 " type="primary" disabled={!isBuildComplete}>
+        <Button onClick={()=>setIsModalOpen(true)} className="mt-6 " type="primary" disabled={!isBuildComplete}>
           Complete Build
         </Button>
       </Card>
+      <Modal title="Congratulations" open={isModalOpen} onOk={()=>setIsModalOpen(false)} onCancel={()=>setIsModalOpen(false)}>
+        <p>You have successfully built your PC</p>
+        <p>Try Again</p>
+        <p>Thank You</p>
+      </Modal>
     </div>
   );
 };
