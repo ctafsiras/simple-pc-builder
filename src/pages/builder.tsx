@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BuilderContext } from "@/context/builderContext";
 import { featuredCategories } from ".";
+import ProductCard from "@/components/ProductCard";
 
 const PCBuilderPage = () => {
   const { selectedComponents } = useContext(BuilderContext);
@@ -28,7 +29,11 @@ const PCBuilderPage = () => {
               </Link>
             }
           >
-            {selectedComponents[category.title] ?? "No component selected"}
+            {selectedComponents[category.title] ? (
+              <ProductCard products={[selectedComponents[category.title]]} />
+            ) : (
+              "No component selected"
+            )}
           </Card>
         ))}
         <Button className="mt-6 " type="primary" disabled={!isBuildComplete}>

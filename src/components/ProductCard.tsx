@@ -14,7 +14,7 @@ const ProductCard = ({ products }: { products: IProduct[] }) => {
     // Implement your logic to handle the click event and navigate to the product detail page.
     // For example, you can use React Router's 'Link' component or any other navigation method.
     if (router.query.for === "builder") {
-      addComponentToBuilder("Monitor", product.name);
+      addComponentToBuilder(product.category, product);
       router.push(`/builder`);
     } else {
       router.push(`/details/${product.id}`);
