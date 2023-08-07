@@ -3,27 +3,18 @@ import { Button, Card } from "antd";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { BuilderContext } from "@/context/builderContext";
-
-interface IProduct {
-  id: number;
-  name: string;
-  category: string;
-  price: number | string;
-  inStock: boolean;
-  rating: number;
-  imageUrl: string;
-}
+import { IProduct } from "@/interface/product";
 
 const ProductCard = ({ products }: { products: IProduct[] }) => {
   const { selectedComponents, addComponentToBuilder } =
     useContext(BuilderContext);
   const router = useRouter();
   // console.log(selectedComponents);
-  const handleProductClick = (product) => {
+  const handleProductClick = (product: IProduct) => {
     // Implement your logic to handle the click event and navigate to the product detail page.
     // For example, you can use React Router's 'Link' component or any other navigation method.
     if (router.query.for === "builder") {
-      addComponentToBuilder('Monitor', product.name);
+      addComponentToBuilder("Monitor", product.name);
       router.push(`/builder`);
     } else {
       router.push(`/details/${product.id}`);
@@ -51,7 +42,7 @@ const ProductCard = ({ products }: { products: IProduct[] }) => {
               width={600}
               height={400}
               alt={product.name}
-              src={product.imageUrl}
+              src={product.image}
             />
           }
           onClick={() => handleProductClick(product)}
@@ -62,8 +53,8 @@ const ProductCard = ({ products }: { products: IProduct[] }) => {
               <div>
                 <p>Category: {product.category}</p>
                 <p>Price: {product.price}</p>
-                <p>Status: {product.inStock ? "In Stock" : "Out of stock"}</p>
-                <p>Rating: {product.rating} Stars</p>
+                <p>Status: {product.status}</p>
+                <p>Rating: {product.average_rating} Stars</p>
               </div>
             }
           />

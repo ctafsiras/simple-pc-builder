@@ -2,31 +2,12 @@ import React from "react";
 import { Row, Col, Card, Avatar, Rate } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import Image from "next/image";
+import { IProduct } from "@/interface/product";
+import { GetStaticProps } from "next";
 const { Meta } = Card;
 
-const ProductDetailPage = () => {
+const ProductDetailPage = ({ product }: { product: IProduct }) => {
   // Placeholder data for the PC component
-  const product = {
-    image: "https://source.unsplash.com/random/500x500",
-    productName: "Example PC Component",
-    category: "CPU / Processor",
-    inStock: true,
-    price: "$199.99",
-    description: "This is a placeholder description for the product.",
-    keyFeatures: [
-      "Brand: Example",
-      "Model: XYZ123",
-      "Specification: ABC",
-      "Port: USB 3.0",
-      "Type: Solid State Drive",
-    ],
-    individualRating: 4.5,
-    averageRating: 4.2,
-    reviews: [
-      { author: "User1", rating: 5, comment: "Great product!" },
-      { author: "User2", rating: 4, comment: "Good quality." },
-    ],
-  };
 
   return (
     <div style={{ padding: "20px" }}>
@@ -38,29 +19,35 @@ const ProductDetailPage = () => {
                 layout="responsive"
                 width={600}
                 height={400}
-                alt={product.productName}
+                alt={product.name}
                 src={product.image}
               />
             }
-            actions={product.inStock ? ["In Stock"] : ["Out of stock"]}
+            actions={
+              product.status === "In Stock" ? ["In Stock"] : ["Out of stock"]
+            }
           >
-            <Meta title={product.productName} description={product.price} />
+            <Meta title={product.name} description={product.price} />
           </Card>
         </Col>
         <Col span={12}>
-          <h1>{product.productName}</h1>
+          <h1>{product.name}</h1>
           <p>{product.category}</p>
           <p>{product.description}</p>
           <h2>Key Features:</h2>
           <ul>
-            {product.keyFeatures.map((feature, index) => (
+            {Object.entries(product.key_features).map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
           </ul>
           <h2>Individual Rating:</h2>
-          <Rate disabled defaultValue={product.individualRating} />
+          <Rate disabled defaultValue={Number(product.individual_rating)} />
           <h2>Average Rating:</h2>
-          <Rate disabled allowHalf defaultValue={product.averageRating} />
+          <Rate
+            disabled
+            allowHalf
+            defaultValue={Number(product.average_rating)}
+          />
           <h2>Reviews:</h2>
           {product.reviews.map((review, index) => (
             <div key={index}>
@@ -68,9 +55,8 @@ const ProductDetailPage = () => {
                 style={{ backgroundColor: "#87d068", marginRight: "10px" }}
                 icon={<UserOutlined />}
               />
-              <strong>{review.author}</strong> -{" "}
-              <Rate disabled defaultValue={review.rating} />{" "}
-              <p>{review.comment}</p>
+              <strong>{"Jhon Deo"}</strong> - <Rate disabled defaultValue={4} />{" "}
+              <p>{review}</p>
             </div>
           ))}
         </Col>
@@ -80,3 +66,23 @@ const ProductDetailPage = () => {
 };
 
 export default ProductDetailPage;
+
+export async function getStaticPaths() {
+  const res = await fetch(`http://localhost:3000/api/products`);
+  const products = await res.json();
+  const paths = products.map((product: IProduct) => ({
+    params: { productId: String(product.id) },
+  }));
+  return {
+    paths,
+    fallback: true,
+  };
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  console.log(context);
+  const { productId } = context.params;
+  const res = await fetch(`http://localhost:3000/api/details/${productId}`);
+  const product = await res.json();
+  return { props: { product } };
+};

@@ -5,66 +5,10 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
+import { GetStaticProps } from "next";
+import { IProduct } from "@/interface/product";
 
 const { Title, Paragraph, Text } = Typography;
-
-const featuredProducts = [
-  {
-    id: 1,
-    name: "Product A",
-    category: "Category A",
-    price: "$19.99",
-    inStock: true,
-    rating: 4.5,
-    imageUrl: "https://source.unsplash.com/random/600x400",
-  },
-  {
-    id: 2,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://source.unsplash.com/random/600x400",
-  },
-  {
-    id: 3,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://source.unsplash.com/random/600x400",
-  },
-  {
-    id: 4,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://source.unsplash.com/random/600x400",
-  },
-  {
-    id: 5,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://source.unsplash.com/random/600x400",
-  },
-  {
-    id: 6,
-    name: "Product B",
-    category: "Category B",
-    price: "$29.99",
-    inStock: false,
-    rating: 3.2,
-    imageUrl: "https://source.unsplash.com/random/600x400",
-  },
-  // Add more products here...
-];
 
 export const featuredCategories = [
   {
@@ -99,7 +43,11 @@ export const featuredCategories = [
     imageUrl: "https://source.unsplash.com/random/150x150",
   },
 ];
-export default function Home() {
+export default function Home({
+  recentProducts,
+}: {
+  recentProducts: IProduct[];
+}) {
   return (
     <>
       <HeroSection />
@@ -107,7 +55,7 @@ export default function Home() {
         <Title level={2} className="flex justify-center">
           Featured Products
         </Title>
-        <ProductCard products={featuredProducts} />
+        <ProductCard products={recentProducts} />
       </div>
 
       <div>
@@ -143,3 +91,9 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await fetch("http://localhost:3000/api/recent-products");
+  const recentProducts = await res.json();
+  return { props: { recentProducts } };
+};

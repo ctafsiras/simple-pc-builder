@@ -18,8 +18,8 @@
       "form_factor": "ATX",
       "voltage": "12V"
     },
-    "individual_rating": "4.8 Stars",
-    "average_rating": "4.7 Stars",
+    "individual_rating": "4.8",
+    "average_rating": "4.7",
     "reviews": [
       "This motherboard is a beast! Highly recommended for gamers. - JohnDoe94",
       "Easy to install and performs flawlessly. - TechGuru21"
@@ -44,8 +44,8 @@
       "form_factor": "ATX",
       "voltage": "5V"
     },
-    "individual_rating": "4.6 Stars",
-    "average_rating": "4.5 Stars",
+    "individual_rating": "4.6",
+    "average_rating": "4.5",
     "reviews": [
       "Great value for money. Handles my Ryzen CPU with ease. - GamerGal92",
       "Impressive build quality and performance. - PCMasterRace22"
@@ -70,8 +70,8 @@
       "form_factor": "ATX",
       "voltage": "12V"
     },
-    "individual_rating": "4.9 Stars",
-    "average_rating": "4.8 Stars",
+    "individual_rating": "4.9",
+    "average_rating": "4.8",
     "reviews": [
       "Absolutely fantastic motherboard! Flawless performance. - GamingPro123",
       "Worth the price. MSI never disappoints. - TechEnthusiast89"
@@ -96,8 +96,8 @@
       "form_factor": "ATX",
       "voltage": "5V"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "The best motherboard I've ever owned. Looks stunning in my build. - RGBMaster99",
       "ASUS nailed it with this one. Outstanding performance. - GamerXtreme76"
@@ -122,8 +122,8 @@
       "form_factor": "Micro-ATX",
       "voltage": "5V"
     },
-    "individual_rating": "4.3 Stars",
-    "average_rating": "4.2 Stars",
+    "individual_rating": "4.3",
+    "average_rating": "4.2",
     "reviews": [
       "Bang for the buck. Great for casual gamers. - BudgetBuilder55",
       "Solid performance at an affordable price. - TechSavvyMom"
@@ -147,8 +147,8 @@
       "type": "288-pin DIMM",
       "voltage": "1.35V"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "Great RAM kit! Works flawlessly in my gaming rig. - GamerX",
       "Corsair never disappoints. Excellent performance. - TechEnthusiast123"
@@ -172,8 +172,8 @@
       "type": "288-pin DIMM",
       "voltage": "1.35V"
     },
-    "individual_rating": "4.8 Stars",
-    "average_rating": "4.7 Stars",
+    "individual_rating": "4.8",
+    "average_rating": "4.7",
     "reviews": [
       "Impressive RAM performance. Perfect for video editing. - ContentCreatorX",
       "Fast and reliable. G.Skill never disappoints. - TechGeek21"
@@ -197,8 +197,8 @@
       "type": "288-pin DIMM",
       "voltage": "1.2V"
     },
-    "individual_rating": "4.5 Stars",
-    "average_rating": "4.4 Stars",
+    "individual_rating": "4.5",
+    "average_rating": "4.4",
     "reviews": [
       "Great budget RAM. Works well for my casual gaming needs. - BudgetGamer99",
       "Reliable and affordable. Kingston never disappoints. - TechSavvyDad"
@@ -222,8 +222,8 @@
       "type": "288-pin DIMM",
       "voltage": "1.35V"
     },
-    "individual_rating": "4.9 Stars",
-    "average_rating": "4.8 Stars",
+    "individual_rating": "4.9",
+    "average_rating": "4.8",
     "reviews": [
       "Top-notch RAM with mesmerizing RGB effects. Love it! - RGBMaster77",
       "Massive capacity and blazing fast speeds. Crucial nailed it. - GamerProX"
@@ -247,8 +247,8 @@
       "type": "288-pin DIMM",
       "voltage": "1.35V"
     },
-    "individual_rating": "4.6 Stars",
-    "average_rating": "4.5 Stars",
+    "individual_rating": "4.6",
+    "average_rating": "4.5",
     "reviews": [
       "Very reliable RAM for my gaming setup. - GamingNinjaX",
       "Great performance at a reasonable price. - TechEnthusiastXYZ"
@@ -273,8 +273,8 @@
       "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current",
       "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "Reliable PSU, powers my gaming setup flawlessly. - GamerX",
       "EVGA never disappoints, excellent performance. - TechEnthusiast123"
@@ -299,8 +299,8 @@
       "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Power, Over Temperature",
       "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
     },
-    "individual_rating": "4.8 Stars",
-    "average_rating": "4.7 Stars",
+    "individual_rating": "4.8",
+    "average_rating": "4.7",
     "reviews": [
       "Outstanding PSU, runs quietly and efficiently. - SilentGamer99",
       "Corsair RM series is top-notch. Highly recommended. - PCMasterRaceX"
@@ -325,8 +325,8 @@
       "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Temperature",
       "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
     },
-    "individual_rating": "4.9 Stars",
-    "average_rating": "4.8 Stars",
+    "individual_rating": "4.9",
+    "average_rating": "4.8",
     "reviews": [
       "Seasonic quality is unmatched, runs like a dream. - TechGeekX",
       "Worth the investment for my high-end build. - GamerPro1234"
@@ -351,8 +351,8 @@
       "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Temperature",
       "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "Thermaltake PSU is solid, no issues whatsoever. - GamingNinjaX",
       "Affordable and reliable choice for my gaming setup. - BudgetGamer77"
@@ -377,8 +377,8 @@
       "protections": "Over Voltage, Under Voltage, Short Circuit, Over Current, Over Power, Over Temperature",
       "connectors": "ATX 24-pin, EPS 8-pin, PCIe 6+2-pin, SATA, Molex"
     },
-    "individual_rating": "4.6 Stars",
-    "average_rating": "4.5 Stars",
+    "individual_rating": "4.6",
+    "average_rating": "4.5",
     "reviews": [
       "NZXT delivers again, PSU works great in my compact build. - MiniMasterRace",
       "Highly recommend the C series, excellent performance. - TechEnthusiastXYZ"
@@ -404,8 +404,8 @@
       "nand_type": "V-NAND 3-bit MLC",
       "encryption": "AES 256-bit"
     },
-    "individual_rating": "4.8 Stars",
-    "average_rating": "4.7 Stars",
+    "individual_rating": "4.8",
+    "average_rating": "4.7",
     "reviews": [
       "Samsung EVO series never disappoints, super fast SSD. - SpeedDemon123",
       "A great upgrade for my system, games load instantly. - GamerXtreme55"
@@ -431,8 +431,8 @@
       "nand_type": "3D NAND TLC",
       "encryption": "AES 256-bit"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "Crucial MX500 is a reliable SSD with excellent performance. - TechGeekX",
       "Great value for a 1TB SSD. Works like a charm. - BudgetTechie99"
@@ -458,8 +458,8 @@
       "nand_type": "N/A",
       "encryption": "N/A"
     },
-    "individual_rating": "4.6 Stars",
-    "average_rating": "4.5 Stars",
+    "individual_rating": "4.6",
+    "average_rating": "4.5",
     "reviews": [
       "WD Blue drives are always reliable, plenty of space for my files. - DataHoarderX",
       "Great HDD for backups and file storage. - DigitalArchivist"
@@ -485,8 +485,8 @@
       "nand_type": "NAND Flash",
       "encryption": "N/A"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "FireCuda SSHD offers good performance and plenty of storage. - GamerPro123",
       "Fast loading times in games, great hybrid drive. - HybridGamerX"
@@ -512,8 +512,8 @@
       "nand_type": "3D NAND TLC",
       "encryption": "AES 256-bit"
     },
-    "individual_rating": "4.5 Stars",
-    "average_rating": "4.4 Stars",
+    "individual_rating": "4.5",
+    "average_rating": "4.4",
     "reviews": [
       "Great budget SSD for my operating system. - BudgetBuilder55",
       "ADATA SU800 performs well, good value for the price. - TechSavvyMom"
@@ -539,8 +539,8 @@
       "aspect_ratio": "16:9",
       "connectors": "HDMI, DisplayPort, USB 3.0"
     },
-    "individual_rating": "4.8 Stars",
-    "average_rating": "4.7 Stars",
+    "individual_rating": "4.8",
+    "average_rating": "4.7",
     "reviews": [
       "ASUS ROG monitors are top-notch. Excellent gaming experience. - GamerXtreme99",
       "Vibrant colors and smooth motion. Highly recommended. - TechEnthusiast123"
@@ -566,8 +566,8 @@
       "aspect_ratio": "16:9",
       "connectors": "HDMI, DisplayPort, USB 3.0"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "Great monitor for photo editing. Accurate colors and sharp images. - PhotoPro123",
       "Dell Ultrasharp series is reliable and provides a comfortable workspace. - OfficeWorker99"
@@ -593,8 +593,8 @@
       "aspect_ratio": "21:9",
       "connectors": "HDMI, DisplayPort, USB 3.0"
     },
-    "individual_rating": "4.9 Stars",
-    "average_rating": "4.8 Stars",
+    "individual_rating": "4.9",
+    "average_rating": "4.8",
     "reviews": [
       "LG did an amazing job with this monitor. Gaming and productivity heaven. - GamerProX",
       "Ultra-wide is a game-changer. LG 34GN850-B is worth every penny. - TechGeekX"
@@ -620,8 +620,8 @@
       "aspect_ratio": "16:9",
       "connectors": "HDMI, DVI, VGA"
     },
-    "individual_rating": "4.6 Stars",
-    "average_rating": "4.5 Stars",
+    "individual_rating": "4.6",
+    "average_rating": "4.5",
     "reviews": [
       "Acer R240HY is a budget-friendly monitor with decent image quality. - BudgetTechie99",
       "Perfect for my home office setup. Simple and reliable. - HomeWorker123"
@@ -647,8 +647,8 @@
       "aspect_ratio": "16:9",
       "connectors": "HDMI, DisplayPort, USB-C"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "BenQ EX2780Q has great colors and smooth gameplay. - GamerXtreme55",
       "HDR adds a new level of immersion. Very satisfied with this monitor. - TechEnthusiastXYZ"
@@ -675,8 +675,8 @@
       "architecture": "Cypress Cove",
       "power_draw": "125W"
     },
-    "individual_rating": "4.8 Stars",
-    "average_rating": "4.7 Stars",
+    "individual_rating": "4.8",
+    "average_rating": "4.7",
     "reviews": [
       "i9-11900K is a beast, handles everything I throw at it. - GamerXtreme99",
       "In-tel CPUs always deliver, excellent performance for my workloads. - TechEnthusiast123"
@@ -703,8 +703,8 @@
       "architecture": "Zen 3",
       "power_draw": "105W"
     },
-    "individual_rating": "4.9 Stars",
-    "average_rating": "4.8 Stars",
+    "individual_rating": "4.9",
+    "average_rating": "4.8",
     "reviews": [
       "Ryzen 9 5900X is a monster, amazing performance in both gaming and rendering. - GamerProX",
       "AM-D is killing it with Zen 3 CPUs, this one is no exception. - TechGeekX"
@@ -731,8 +731,8 @@
       "architecture": "Cypress Cove",
       "power_draw": "125W"
     },
-    "individual_rating": "4.7 Stars",
-    "average_rating": "4.6 Stars",
+    "individual_rating": "4.7",
+    "average_rating": "4.6",
     "reviews": [
       "i7-11700K is a great CPU, runs my games flawlessly. - GamingNinjaX",
       "Go-od balance between price and performance. Happy with my purchase. - BudgetGamer77"
@@ -759,8 +759,8 @@
       "architecture": "Zen 3",
       "power_draw": "105W"
     },
-    "individual_rating": "4.8 Stars",
-    "average_rating": "4.7 Stars",
+    "individual_rating": "4.8",
+    "average_rating": "4.7",
     "reviews": [
       "Ryzen 7 5800X is a powerhouse, handles everything with ease. - TechGuru21",
       "Fa-st and efficient CPU, excellent upgrade for my system. - PCMasterRaceX"
@@ -787,8 +787,8 @@
       "architecture": "Cypress Cove",
       "power_draw": "125W"
     },
-    "individual_rating": "4.6 Stars",
-    "average_rating": "4.5 Stars",
+    "individual_rating": "4.6",
+    "average_rating": "4.5",
     "reviews": [
       "Core i5-11600K is a solid performer for gaming. - BudgetBuilder55",
       "Gr-eat value CPU, delivers smooth gaming experience. - TechSavvyMom"

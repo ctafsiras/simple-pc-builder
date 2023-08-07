@@ -45,10 +45,10 @@ const items: MenuProps["items"] = [
         label: "Monitor",
         key: "category/monitor",
       },
-      {
-        label: "Others",
-        key: "category/others",
-      },
+      // {
+      //   label: "Others",
+      //   key: "category/others",
+      // },
     ],
   },
   {
